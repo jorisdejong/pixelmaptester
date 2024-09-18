@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Ht3jXf" name="PixelMapTester" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" headerPath="../../../HybridApi">
+  <MAINGROUP id="w2z7lR" name="PixelMapTester">
+    <GROUP id="{87B53F7A-7D09-85E1-EFCC-6537BE6741EC}" name="Source">
+      <FILE id="TEB12F" name="RandomWords.h" compile="0" resource="0" file="Source/RandomWords.h"/>
+      <FILE id="AAGGDZ" name="Slice.cpp" compile="1" resource="0" file="../hybridapi/Arena/Slice/Slice.cpp"/>
+      <FILE id="Wly2XQ" name="Slice.h" compile="0" resource="0" file="../hybridapi/Arena/Slice/Slice.h"/>
+      <FILE id="qU3QV7" name="PixelMapButton.cpp" compile="1" resource="0"
+            file="../chaser/Source/utility/PixelMapButton.cpp"/>
+      <FILE id="e3aAj1" name="PixelMapButton.h" compile="0" resource="0"
+            file="../chaser/Source/utility/PixelMapButton.h"/>
+      <FILE id="G6Tk2E" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="BKAFd0" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="gQuwHz" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="PixelMapTester"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="PixelMapTester"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
