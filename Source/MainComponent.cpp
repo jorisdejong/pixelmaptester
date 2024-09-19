@@ -60,10 +60,13 @@ void MainComponent::mouseDrag( const MouseEvent& e )
 	dragComponent( getParentComponent(), e, nullptr );
 }
 
-void MainComponent::mouseUp( const MouseEvent& )
+void MainComponent::mouseUp( const MouseEvent& e )
 {
-	resized();
-	repaint();
+	if ( !e.mouseWasDraggedSinceMouseDown() )
+	{
+		resized();
+		repaint();
+	}
 }
 
 void MainComponent::subdivideRectangle( int x, int y, int width, int height, Array<Rectangle<int>>& rectangles )
